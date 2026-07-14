@@ -1,0 +1,35 @@
+Building for debugging...
+[0/7] Write sources
+[1/7] /Users/wangrenzhu/work/DepositLens/.build/arm64-apple-macosx/debug/DepositLensCorePackageTests.derived/runner.swift
+[2/7] Write sources
+[4/7] Write swift-version--58304C5D6DBC2206.txt
+[6/9] Compiling DepositLensCore InspectionLogic.swift
+[7/9] Emitting module DepositLensCore
+[8/11] Emitting module DepositLensCoreTests
+[9/11] Compiling DepositLensCoreTests InspectionLogicTests.swift
+[10/13] Compiling DepositLensCorePackageTests runner.swift
+[11/13] Emitting module DepositLensCorePackageTests
+[11/13] Write Objects.LinkFileList
+[12/13] Linking DepositLensCorePackageTests
+Build complete! (17.91s)
+Test Suite 'All tests' started at 2026-07-15 07:36:34.901.
+Test Suite 'DepositLensCorePackageTests.xctest' started at 2026-07-15 07:36:34.905.
+Test Suite 'InspectionLogicTests' started at 2026-07-15 07:36:34.905.
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testEditedAndAcceptedProposalsEnterReport]' started.
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testEditedAndAcceptedProposalsEnterReport]' passed (0.002 seconds).
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testNotApplicableResolvesGap]' started.
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testNotApplicableResolvesGap]' passed (0.000 seconds).
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testRejectedProposalNeverEntersReport]' started.
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testRejectedProposalNeverEntersReport]' passed (0.000 seconds).
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testUnderSinkGapKeepsKitchenIncomplete]' started.
+Test Case '-[DepositLensCoreTests.InspectionLogicTests testUnderSinkGapKeepsKitchenIncomplete]' passed (0.000 seconds).
+Test Suite 'InspectionLogicTests' passed at 2026-07-15 07:36:34.909.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'DepositLensCorePackageTests.xctest' passed at 2026-07-15 07:36:34.909.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'All tests' passed at 2026-07-15 07:36:34.909.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.007) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
