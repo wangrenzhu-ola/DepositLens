@@ -23,4 +23,9 @@ final class InspectionLogicTests: XCTestCase {
         edited.decision = .edited
         XCTAssertEqual(InspectionLogic.reportable([edited]).count, 1)
     }
+    func testManualCapturedObservationsAreDocumentedWithoutAI() {
+        let captured = SurfaceRecord(id: "sink", name: "Below kitchen sink", state: .captured, mediaID: "DL-123", observation: "No moisture visible", capturedAt: Date())
+        let missing = SurfaceRecord(id: "wall", name: "Wall")
+        XCTAssertEqual(InspectionLogic.documented([captured, missing]), [captured])
+    }
 }

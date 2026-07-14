@@ -8,8 +8,10 @@ public struct SurfaceRecord: Codable, Equatable, Identifiable {
     public var name: String
     public var state: SurfaceState
     public var mediaID: String?
-    public init(id: String, name: String, state: SurfaceState = .missing, mediaID: String? = nil) {
-        self.id = id; self.name = name; self.state = state; self.mediaID = mediaID
+    public var observation: String
+    public var capturedAt: Date?
+    public init(id: String, name: String, state: SurfaceState = .missing, mediaID: String? = nil, observation: String = "", capturedAt: Date? = nil) {
+        self.id = id; self.name = name; self.state = state; self.mediaID = mediaID; self.observation = observation; self.capturedAt = capturedAt
     }
 }
 
@@ -30,4 +32,5 @@ public enum InspectionLogic {
     public static func isComplete(_ surfaces: [SurfaceRecord]) -> Bool { surfaces.allSatisfy { $0.state != .missing } }
     public static func missingNames(_ surfaces: [SurfaceRecord]) -> [String] { surfaces.filter { $0.state == .missing }.map(\.name) }
     public static func reportable(_ proposals: [ConditionProposal]) -> [ConditionProposal] { proposals.filter { $0.decision == .accepted || $0.decision == .edited } }
+    public static func documented(_ surfaces: [SurfaceRecord]) -> [SurfaceRecord] { surfaces.filter { $0.state == .captured } }
 }

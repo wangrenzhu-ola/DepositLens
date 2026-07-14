@@ -9,9 +9,10 @@ struct ReviewView: View {
             Section(header: Text("Provisional changes"), footer: Text("Nothing enters your report until you confirm it.")) {
                 ForEach(store.record.proposals) { ProposalRow(proposal: $0, onAccept: { store.decide(.accepted, proposalID: $0.id) }, onEdit: { editing = $0 }, onReject: { store.decide(.rejected, proposalID: $0.id) }) }
             }
-            Section { Button(action: export) { Label("Export confirmed PDF", systemImage: "doc.richtext") }.disabled(InspectionLogic.reportable(store.record.proposals).isEmpty); if let url = shareURL { ShareLinkView(url: url) } }
+            Section(header: Text("Report"), footer: Text("Exports manual captures even when cloud analysis is unavailable.")) { Button(action: export) { Label("Export evidence PDF", systemImage: "doc.richtext") }.disabled(!hasReportContent); if let url = shareURL { ShareLinkView(url: url) } }
         }.navigationTitle("Compare & confirm").sheet(item: $editing) { proposal in EditProposalView(proposal: proposal) { text in store.decide(.edited, proposalID: proposal.id, wording: text) } }
     }
+    private var hasReportContent: Bool { store.record.rooms.contains { !InspectionLogic.documented($0.surfaces).isEmpty } || !InspectionLogic.reportable(store.record.proposals).isEmpty }
     private func export() { let url = FileManager.default.temporaryDirectory.appendingPathComponent("DepositLens-Report.pdf"); try? ReportExporter.makePDF(record: store.record).write(to: url); shareURL = url }
 }
 

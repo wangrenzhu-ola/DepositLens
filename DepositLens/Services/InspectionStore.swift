@@ -17,10 +17,19 @@ final class InspectionStore: ObservableObject {
         RoomRecord(name: "Bedroom", surfaces: [SurfaceRecord(id: "walls", name: "Walls"), SurfaceRecord(id: "floor", name: "Floor"), SurfaceRecord(id: "windows", name: "Windows")])
     ], proposals: [ConditionProposal(room: "Bedroom", surface: "Wall", wording: "Possible new wall mark", beforeMediaID: "MOVEIN-001", afterMediaID: "MOVEOUT-014")])
 
-    func set(_ state: SurfaceState, roomID: UUID, surfaceID: String) {
+    func set(_ state: SurfaceState, roomID: UUID, surfaceID: String, observation: String = "") {
         guard let room = record.rooms.firstIndex(where: { $0.id == roomID }), let surface = record.rooms[room].surfaces.firstIndex(where: { $0.id == surfaceID }) else { return }
         record.rooms[room].surfaces[surface].state = state
-        if state == .captured { record.rooms[room].surfaces[surface].mediaID = "DL-\(Int(Date().timeIntervalSince1970))" }
+        if state == .captured {
+            let now = Date()
+            record.rooms[room].surfaces[surface].mediaID = "DL-\(Int(now.timeIntervalSince1970))"
+            record.rooms[room].surfaces[surface].capturedAt = now
+            record.rooms[room].surfaces[surface].observation = observation.trimmingCharacters(in: .whitespacesAndNewlines)
+        } else {
+            record.rooms[room].surfaces[surface].mediaID = nil
+            record.rooms[room].surfaces[surface].capturedAt = nil
+            record.rooms[room].surfaces[surface].observation = ""
+        }
     }
     func decide(_ decision: ProposalDecision, proposalID: UUID, wording: String? = nil) {
         guard let index = record.proposals.firstIndex(where: { $0.id == proposalID }) else { return }
