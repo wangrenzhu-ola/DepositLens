@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		326FDA1C534919A8EEE3F07C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5BC498F8487A765C12FAF6CB /* PrivacyInfo.xcprivacy */; };
+		595B104A4E2F8631EBAFA994 /* SweepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C324412E53ADEDBD1EE7798 /* SweepView.swift */; };
+		60DD4D8EEF56AF1252F2FA6B /* DepositLensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADACC2D48477A470C59562C /* DepositLensUITests.swift */; };
+		6F8697FA244BD3CAB7653358 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57DE513425F16A27B6622A /* ReviewView.swift */; };
+		7BABCE394BC163AAA921B30F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE9043ED358CA08E5FEDB0 /* RootView.swift */; };
+		9D2199CDA0762C99927A55DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FAD4E4796C2541D0DF4801 /* SettingsView.swift */; };
+		9EE75B35B396A20D45CECB67 /* ReportExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A85202DA4B8C76E4A62C5 /* ReportExporter.swift */; };
+		A17E881059EBCA294907764B /* AppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E83E2419A7893709F7FA14 /* AppModels.swift */; };
+		A19F8BA5B5DF002DD9CEE756 /* InspectionLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8C7381B13762307229983 /* InspectionLogic.swift */; };
+		B0E39A63CD132A8291A0BEF4 /* DepositLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47B3739CCAD23DACAFF832 /* DepositLensApp.swift */; };
+		C41B717DFA77AF036C956364 /* InspectionLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CBE35CFA750BAB236D78E /* InspectionLogicTests.swift */; };
+		E7207EB6393380B300C5DA27 /* InspectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA74A07E49D226F84796B7 /* InspectionStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3264CE81D22C51773E2FA13A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A3EBB54C73F6D6C85CFDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77384A7796F9ADC9FF4C494E;
+			remoteInfo = DepositLens;
+		};
+		E4846145550B630F3918F88A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A3EBB54C73F6D6C85CFDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77384A7796F9ADC9FF4C494E;
+			remoteInfo = DepositLens;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A8C7381B13762307229983 /* InspectionLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionLogic.swift; sourceTree = "<group>"; };
+		07E83E2419A7893709F7FA14 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModels.swift; sourceTree = "<group>"; };
+		0F707275F5C680C8412D923C /* DepositLensUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DepositLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25EA74A07E49D226F84796B7 /* InspectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionStore.swift; sourceTree = "<group>"; };
+		4A2A85202DA4B8C76E4A62C5 /* ReportExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExporter.swift; sourceTree = "<group>"; };
+		5BC498F8487A765C12FAF6CB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		7758B90B1DCCE0DB89277B1F /* DepositLensCoreTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DepositLensCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C324412E53ADEDBD1EE7798 /* SweepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweepView.swift; sourceTree = "<group>"; };
+		A2FAD4E4796C2541D0DF4801 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AB47B3739CCAD23DACAFF832 /* DepositLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositLensApp.swift; sourceTree = "<group>"; };
+		BC511E1CA978F02AF3D3EED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BF57DE513425F16A27B6622A /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		C02CBE35CFA750BAB236D78E /* InspectionLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionLogicTests.swift; sourceTree = "<group>"; };
+		CADACC2D48477A470C59562C /* DepositLensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositLensUITests.swift; sourceTree = "<group>"; };
+		E03498EA70796E83520519DE /* DepositLens.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DepositLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EE9043ED358CA08E5FEDB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F0757882924C8C6909F8603 /* DepositLensCore */ = {
+			isa = PBXGroup;
+			children = (
+				06A8C7381B13762307229983 /* InspectionLogic.swift */,
+			);
+			path = DepositLensCore;
+			sourceTree = "<group>";
+		};
+		5BD0B99B7D491E35518B553D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E03498EA70796E83520519DE /* DepositLens.app */,
+				7758B90B1DCCE0DB89277B1F /* DepositLensCoreTests.xctest */,
+				0F707275F5C680C8412D923C /* DepositLensUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67774568E4A72F441A00CEDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF57DE513425F16A27B6622A /* ReviewView.swift */,
+				E2EE9043ED358CA08E5FEDB0 /* RootView.swift */,
+				A2FAD4E4796C2541D0DF4801 /* SettingsView.swift */,
+				8C324412E53ADEDBD1EE7798 /* SweepView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F3F605B18C93FC0623AE4C1 /* DepositLens */ = {
+			isa = PBXGroup;
+			children = (
+				5BC498F8487A765C12FAF6CB /* PrivacyInfo.xcprivacy */,
+				CD4B2A335511CC11019F6914 /* App */,
+				D3388B4C6453E88BC8A2349C /* Models */,
+				D71E703E97E307FC4EF8EA2A /* Resources */,
+				D3362CFF345F2C8484B3C94F /* Services */,
+				67774568E4A72F441A00CEDA /* Views */,
+			);
+			path = DepositLens;
+			sourceTree = "<group>";
+		};
+		94934C35E047198369C57A38 /* DepositLensUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CADACC2D48477A470C59562C /* DepositLensUITests.swift */,
+			);
+			path = DepositLensUITests;
+			sourceTree = "<group>";
+		};
+		CD4B2A335511CC11019F6914 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB47B3739CCAD23DACAFF832 /* DepositLensApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D3362CFF345F2C8484B3C94F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25EA74A07E49D226F84796B7 /* InspectionStore.swift */,
+				4A2A85202DA4B8C76E4A62C5 /* ReportExporter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3388B4C6453E88BC8A2349C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07E83E2419A7893709F7FA14 /* AppModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7117BB5D0B11A6AC2FD364E /* DepositLensCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				C02CBE35CFA750BAB236D78E /* InspectionLogicTests.swift */,
+			);
+			path = DepositLensCoreTests;
+			sourceTree = "<group>";
+		};
+		D71E703E97E307FC4EF8EA2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC511E1CA978F02AF3D3EED8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E94BF636178683179B2C4E18 = {
+			isa = PBXGroup;
+			children = (
+				6F3F605B18C93FC0623AE4C1 /* DepositLens */,
+				0F0757882924C8C6909F8603 /* DepositLensCore */,
+				D7117BB5D0B11A6AC2FD364E /* DepositLensCoreTests */,
+				94934C35E047198369C57A38 /* DepositLensUITests */,
+				5BD0B99B7D491E35518B553D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FA29EC7E00E4AF8F9601614 /* DepositLensCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7288467CFD8CCF1A4D4F0CC1 /* Build configuration list for PBXNativeTarget "DepositLensCoreTests" */;
+			buildPhases = (
+				2417746B8A40417C203F1A33 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D52651C11B5EB7CC9208A3C /* PBXTargetDependency */,
+			);
+			name = DepositLensCoreTests;
+			packageProductDependencies = (
+			);
+			productName = DepositLensCoreTests;
+			productReference = 7758B90B1DCCE0DB89277B1F /* DepositLensCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77384A7796F9ADC9FF4C494E /* DepositLens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D444DBBF09E7E84A2248C6B6 /* Build configuration list for PBXNativeTarget "DepositLens" */;
+			buildPhases = (
+				622C395C16E0257721A19767 /* Sources */,
+				C4F93327C8D26508CFB47E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DepositLens;
+			packageProductDependencies = (
+			);
+			productName = DepositLens;
+			productReference = E03498EA70796E83520519DE /* DepositLens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6CDB4615C81DF4BC4D9271F /* DepositLensUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DB42EA3FDEF8451920540F /* Build configuration list for PBXNativeTarget "DepositLensUITests" */;
+			buildPhases = (
+				E6971CE20DCC3A56E9E728A6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684E6ACAA15671369B963DF9 /* PBXTargetDependency */,
+			);
+			name = DepositLensUITests;
+			packageProductDependencies = (
+			);
+			productName = DepositLensUITests;
+			productReference = 0F707275F5C680C8412D923C /* DepositLensUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5A3EBB54C73F6D6C85CFDF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B6CDB4615C81DF4BC4D9271F = {
+						TestTargetID = 77384A7796F9ADC9FF4C494E;
+					};
+				};
+			};
+			buildConfigurationList = 85032994A3B347B78FE639CD /* Build configuration list for PBXProject "DepositLens" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E94BF636178683179B2C4E18;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5BD0B99B7D491E35518B553D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77384A7796F9ADC9FF4C494E /* DepositLens */,
+				2FA29EC7E00E4AF8F9601614 /* DepositLensCoreTests */,
+				B6CDB4615C81DF4BC4D9271F /* DepositLensUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4F93327C8D26508CFB47E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326FDA1C534919A8EEE3F07C /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2417746B8A40417C203F1A33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41B717DFA77AF036C956364 /* InspectionLogicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622C395C16E0257721A19767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17E881059EBCA294907764B /* AppModels.swift in Sources */,
+				B0E39A63CD132A8291A0BEF4 /* DepositLensApp.swift in Sources */,
+				A19F8BA5B5DF002DD9CEE756 /* InspectionLogic.swift in Sources */,
+				E7207EB6393380B300C5DA27 /* InspectionStore.swift in Sources */,
+				9EE75B35B396A20D45CECB67 /* ReportExporter.swift in Sources */,
+				6F8697FA244BD3CAB7653358 /* ReviewView.swift in Sources */,
+				7BABCE394BC163AAA921B30F /* RootView.swift in Sources */,
+				9D2199CDA0762C99927A55DD /* SettingsView.swift in Sources */,
+				595B104A4E2F8631EBAFA994 /* SweepView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6971CE20DCC3A56E9E728A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DD4D8EEF56AF1252F2FA6B /* DepositLensUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		684E6ACAA15671369B963DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77384A7796F9ADC9FF4C494E /* DepositLens */;
+			targetProxy = 3264CE81D22C51773E2FA13A /* PBXContainerItemProxy */;
+		};
+		9D52651C11B5EB7CC9208A3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77384A7796F9ADC9FF4C494E /* DepositLens */;
+			targetProxy = E4846145550B630F3918F88A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		080E3E5A801C6711648B404C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DepositLens;
+			};
+			name = Release;
+		};
+		2B78D9C6177B859D8E8BA501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangrenzhu.depositlens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		339C9E10A58549C78BD9F07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DepositLens/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D58491D0B1C0FA496082586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepositLens.app/DepositLens";
+			};
+			name = Debug;
+		};
+		4136BEA7A8AEF707C3A6DC86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepositLens.app/DepositLens";
+			};
+			name = Release;
+		};
+		5816CD0F47C9F46DE89FB9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DepositLens;
+			};
+			name = Debug;
+		};
+		7AB939A362B6AAB1FB94312E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DepositLens/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B97E68299D13FAB29AEBB156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangrenzhu.depositlens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7288467CFD8CCF1A4D4F0CC1 /* Build configuration list for PBXNativeTarget "DepositLensCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D58491D0B1C0FA496082586 /* Debug */,
+				4136BEA7A8AEF707C3A6DC86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		85032994A3B347B78FE639CD /* Build configuration list for PBXProject "DepositLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97E68299D13FAB29AEBB156 /* Debug */,
+				2B78D9C6177B859D8E8BA501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87DB42EA3FDEF8451920540F /* Build configuration list for PBXNativeTarget "DepositLensUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5816CD0F47C9F46DE89FB9B4 /* Debug */,
+				080E3E5A801C6711648B404C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D444DBBF09E7E84A2248C6B6 /* Build configuration list for PBXNativeTarget "DepositLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB939A362B6AAB1FB94312E /* Debug */,
+				339C9E10A58549C78BD9F07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5A3EBB54C73F6D6C85CFDF2 /* Project object */;
+}
