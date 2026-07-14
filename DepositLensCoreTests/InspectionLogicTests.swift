@@ -1,5 +1,9 @@
 import XCTest
+#if canImport(DepositLens)
+@testable import DepositLens
+#else
 @testable import DepositLensCore
+#endif
 
 final class InspectionLogicTests: XCTestCase {
     func testUnderSinkGapKeepsKitchenIncomplete() {
