@@ -1,0 +1,32 @@
+{
+  "schema_version": "appfactory.xcode_runtime_report.v1",
+  "run_id": "run-codex-appfactory-fullapp-20260715-021851",
+  "job_id": "rough-app-102eab158381d45892ec8fc3",
+  "implementation_mode": "agent_native_build_loop",
+  "generator_template_substitution_allowed": false,
+  "project": "/Users/wangrenzhu/work/DepositLens/DepositLens.xcodeproj",
+  "scheme": "DepositLens",
+  "destination": "platform=iOS Simulator,name=iPhone 17 Pro",
+  "swift_language_version": "5",
+  "minimum_deployment_target": "14.0",
+  "build": {
+    "command": "xcodebuild -project DepositLens.xcodeproj -scheme DepositLens -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17 Pro' -derivedDataPath /tmp/appfactory-derived-rough-app-102eab158381d45892ec8fc3 CODE_SIGNING_ALLOWED=NO build",
+    "exit_code": 0,
+    "status": "PASS",
+    "signal": "** BUILD SUCCEEDED **"
+  },
+  "unit_tests": {
+    "command": "xcodebuild -project DepositLens.xcodeproj -scheme DepositLens -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17 Pro' -derivedDataPath /tmp/appfactory-derived-rough-app-102eab158381d45892ec8fc3 CODE_SIGNING_ALLOWED=NO test",
+    "exit_code": 0,
+    "status": "PASS",
+    "executed_tests": 5,
+    "signal": "** TEST SUCCEEDED **"
+  },
+  "simulator": {
+    "device": "iPhone 17 Pro",
+    "install": {"command": "xcrun simctl install booted /tmp/appfactory-derived-rough-app-102eab158381d45892ec8fc3/Build/Products/Debug-iphonesimulator/DepositLens.app", "exit_code": 0},
+    "launch": {"command": "xcrun simctl launch booted com.wangrenzhu.depositlens", "exit_code": 0, "pid": 11713},
+    "runtime_readback": {"command": "xcrun simctl io booted screenshot /Users/wangrenzhu/work/DepositLens/evidence/runtime.png", "exit_code": 0, "ref": "/Users/wangrenzhu/work/DepositLens/evidence/runtime.png", "observed": "Evidence sweep renders Kitchen and Bedroom coverage, explicit Below kitchen sink missing state, and Sweep/Review/Privacy tabs"}
+  },
+  "status": "PASS"
+}
